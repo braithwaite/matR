@@ -92,7 +92,7 @@ head(yy)</code></pre>
 ## Arthropoda            5.459</code></pre>
 <p>The entry, row, and column minimums can be set as follows. This example demonstrates the general syntax for passing arguments to particular transformation functions.</p>
 <pre class="r"><code>zz &lt;- transform (xx2, t_NA2Zero, t_Threshold=list(entry.min=5, row.min=10, col.min=5), t_Log)</code></pre>
-<p>A quick check shows the difference made by a more restritive filter. Here are the annotations discarded by each of the two preceding transformations:</p>
+<p>A quick check of the annotations discarded by each of the preceding transformations shows the effect of a more stringent filter:</p>
 <pre class="r"><code>setdiff (rownames(xx2), rownames(yy))</code></pre>
 <pre><code>## [1] &quot;Annelida&quot;    &quot;Brachiopoda&quot; &quot;Chromerida&quot;  &quot;Nemertea&quot;    &quot;Priapulida&quot;</code></pre>
 <pre class="r"><code>setdiff (rownames(xx2), rownames(zz))</code></pre>
@@ -119,7 +119,7 @@ head(yy)</code></pre>
 ## Eukaryota      -0.6724
 ## 
 ## [id:] derived with transform.biom(`_data` = xx4, t_NA2Zero, t_Threshold, t_Log, t_ColCenter, t_ColScale)
-## [generated_by:] matR: metagenomics analysis tools for R (0.9) on [date:] 2014-12-28 01:34:39
+## [generated_by:] matR: metagenomics analysis tools for R (0.9) on [date:] 2014-12-28 15:33:34
 ## [type:] dense Taxon table (3x16)
 ## [format:] Biological Observation Matrix 1.0</code></pre>
 <p>The transformations described so far are predefined, but it’s simple to use your own, too. Any function can be used with <code>transform.biom()</code> that expects a matrix <code>x</code> as its first argument and returns a modified version of it. The function may drop rows and/or columns, but names of retained rows and columns must also be retained. This example changes all matrix entries to 1 or 0 to indicate presence or absence of an annotation.</p>
@@ -138,7 +138,7 @@ head(yy)</code></pre>
 ## Acid stress                             1            0
 ## Adhesion                                0            1
 ## Alanine, serine, and glycine            1            1</code></pre>
-<p>For comparison, here is a different way to achieve something similar.</p>
+<p>For comparison, here’s a different way to achieve something similar.</p>
 <pre class="r"><code>t_Indicator &lt;- function (x, min=2, ...) { ifelse (x &gt;= min, 1, 0) }
 yy &lt;- transform (xx1, t_Indicator = list(min=10))
 head(yy)</code></pre>

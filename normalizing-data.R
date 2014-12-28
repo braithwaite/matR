@@ -39,20 +39,18 @@ head(yy)
 
 zz <- transform (xx2, t_NA2Zero, t_Threshold=list(entry.min=5, row.min=10, col.min=5), t_Log)
 
-#' A quick check shows the difference made by a more restritive filter.
-#' Here are the annotations discarded by each of the two preceding transformations:
+#' A quick check of the annotations discarded by each of the preceding transformations 
+#' shows the effect of a more stringent filter:
 
 setdiff (rownames(xx2), rownames(yy))
 setdiff (rownames(xx2), rownames(zz))
 
-
-
+#' ************************************************
 #' each sample centered around zero; scaling columnwise by standard deviation
 
 transform (xx4, t_NA2Zero, t_Threshold, t_Log, t_ColCenter, t_ColScale)
 
-
-
+#' ************************************************
 
 #' The transformations described so far are predefined, but it's simple to use your own, too.
 #' Any function can be used with `transform.biom()` that expects a matrix `x` as its first argument and returns a modified version of it.
@@ -63,8 +61,10 @@ t_Indicator <- function (x, ...) { ifelse (x,1,0) }
 yy <- transform (xx1, t_Threshold = list(entry.min=10), t_Indicator)
 head(yy)
 
-#' For comparison, here is a different way to achieve something similar.
+#' Here's a different way to achieve something similar, 
+#' illustrating how transformations can accept additional arguments.
 
 t_Indicator <- function (x, min=2, ...) { ifelse (x >= min, 1, 0) }
 yy <- transform (xx1, t_Indicator = list(min=10))
 head(yy)
+

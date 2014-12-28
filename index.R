@@ -40,9 +40,10 @@ citation('matR')
 #' ---------
 #' + [HTML](analysis-in-a-nutshell.html) | [pdf](analysis-in-a-nutshell.pdf) | [source](analysis-in-a-nutshell.R) : analysis-in-a-nutshell
 #' + [HTML](retrieving-annotations.html) | [pdf](retrieving-annotations.pdf) | [source](retrieving-annotations.R) : retrieving-annotations
+#' + [HTML](annotation-distribution.html) | [pdf](annotation-distribution.pdf) | [source](annotation-distribution.R) : annotation-distribution
 #' + [HTML](plotting-principal-components.html) | [pdf](plotting-principal-components.pdf) | [source](plotting-principal-components.R) : plotting-principal-components
-#' + [HTML](handling-biom.html) | [pdf](handling-biom.pdf) | [source](handling-biom.R) : handling-biom
 #' + [HTML](normalizing-data.html) | [pdf](normalizing-data.pdf) | [source](normalizing-data.R) : normalizing-data
+#' + [HTML](handling-biom.html) | [pdf](handling-biom.pdf) | [source](handling-biom.R) : handling-biom
 #' + [HTML](help.html) | [pdf](help.pdf) | [source](help.R) : help
 #' 
 #' 
