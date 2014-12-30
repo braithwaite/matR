@@ -31,7 +31,7 @@ point_labels <- paste(" ", LETTERS[1:7])
 #+ echo=FALSE 
 close.screen(all=TRUE)
 
-#' Complete help is available with `?princomp.biom`.
+#' ************* Complete help is available with `?princomp.biom`.
 #' built on other functions,
 #' so for sophisticated graphics tweaks, parameters from those functions can be applied.
 #' do your own research.

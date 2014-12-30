@@ -10,7 +10,7 @@
 
 library(matR)
 library(ggplot2)		# should require() within barchart.biom()
-#source("http://mg-rast.github.io/matR/local-workbench.R")
+# ***************** source("http://mg-rast.github.io/matR/local-workbench.R")
 barchart.biom <- function (...) { }
 source("http://braithwaite.github.io/matR/local-workbench.R")
 
