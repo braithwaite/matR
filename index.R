@@ -10,7 +10,7 @@
 #' [pdf](http://cran.r-project.org/web/packages/matR/matR.pdf))
 #' are available on
 #' [CRAN](http://cran.r-project.org);
-#' see **"Installation"** at the bottom of this page to get started.
+#' see **Installation** at the bottom of this page to get started.
 #' Just below, some extended tutorials are available in HTML and pdf versions.
 #' Also, with matR loaded you can execute these in your R session,
 #' for example with:
@@ -18,19 +18,19 @@
 #+ eval=FALSE
 step.through(file="http://mg-rast.github.io/matR/analysis-in-a-nutshell.R")
 
-#' In the same way, **"Other scripts"** (below) can be viewed here or executed locally.
-#' The **"Extensions"** section lists add-ons to the CRAN version of the package.
+#' In the same way **Other scripts** listed below can be viewed here or executed locally.
+#' The **Extensions** section lists add-ons to the CRAN version of the package.
 #' There's no reason to step through them line by line, but the extra functionality
 #' they provide can be introduced to your R session, for example with:
 
 #+ eval=FALSE
-source("file="http://mg-rast.github.io/matR/local-workbench.R")
+source(file="http://mg-rast.github.io/matR/local-workbench.R")
 
 #' Please credit this software if it assists your work.
 #' R proposes a standard form for package citation shown by:
 		 
 #+ eval=FALSE
-citation('matR')
+citation("matR")
 
 #' Check out our [Google group (matR-forum)](https://groups.google.com/forum/#!forum/matR-forum)
 #' for discussion and help.
@@ -39,23 +39,28 @@ citation('matR')
 #' Tutorials
 #' ---------
 #' + [HTML](analysis-in-a-nutshell.html) | [pdf](analysis-in-a-nutshell.pdf) | [source](analysis-in-a-nutshell.R) : analysis-in-a-nutshell
-#' + [HTML](retrieving-annotations.html) | [pdf](retrieving-annotations.pdf) | [source](retrieving-annotations.R) : retrieving-annotations
+#' + [HTML](six-analyses-for-any-metagenome.html) | [pdf](six-analyses-for-any-metagenome.pdf) | [source](six-analyses-for-any-metagenome.R) : six-analyses-for-any-metagenome
+#'
 #' + [HTML](annotation-distribution.html) | [pdf](annotation-distribution.pdf) | [source](annotation-distribution.R) : annotation-distribution
+#' + [HTML](creating-heatmaps.html) | [pdf](creating-heatmaps.pdf) | [source](creating-heatmaps.R) : creating-heatmaps
 #' + [HTML](plotting-principal-components.html) | [pdf](plotting-principal-components.pdf) | [source](plotting-principal-components.R) : plotting-principal-components
-#' + [HTML](normalizing-data.html) | [pdf](normalizing-data.pdf) | [source](normalizing-data.R) : normalizing-data
+#' + [HTML](about-analysis-functions.html) | [pdf](about-analysis-functions.pdf) | [source](about-analysis-functions.R) : about-analysis-functions
+#'
+#' + [HTML](retrieving-annotations.html) | [pdf](retrieving-annotations.pdf) | [source](retrieving-annotations.R) : retrieving-annotations
 #' + [HTML](handling-biom.html) | [pdf](handling-biom.pdf) | [source](handling-biom.R) : handling-biom
+#' + [HTML](normalizing-data.html) | [pdf](normalizing-data.pdf) | [source](normalizing-data.R) : normalizing-data
+#'
 #' + [HTML](help.html) | [pdf](help.pdf) | [source](help.R) : help
 #' 
 #' 
 #' Extensions
 #' ----------
-#' + [source](local-workbench.R) : local-workbench
+#' + [source](local-workbench.R) : local-workbench.R
+#' + [source](six-simple-analyses.R) : six-simple-analyses.R
 #' 
 #' Other scripts
 #' -------------
-#' + [HTML]() | [pdf]() | [source]() : soils-2014-tutorial-1
-#' + [HTML]() | [pdf]() | [source]() : soils-2014-tutorial-2
-#' + [HTML]() | [pdf]() | [source]() : soils-2014-tutorial-3
+#' + _none right now_
 #' 
 #' Installation
 #' ------------

@@ -63,23 +63,23 @@ image(xx1t, col=blue_palette, key=TRUE, lwid=c(1,2),lhei=c(1,2),
 
 #' gplots::heatmap.2() has many other features, all of which are available via `image.biom()`
 #' for instace use `lmat=` to reposition elements.  give example rotated 90 degrees.
-#' For another instance, it's possible insist on a grouping or ordering for the dendrogram.
-#' I encourage you to read about them: it might be very useful to consult `?gplots::heatmap.2()`.
-
+#' For another instance, it's possible to insist on a grouping or ordering for the dendrogram.
+#' Read about them: it might be very useful to consult `?gplots::heatmap.2()`.
+#'
 #' Heatmaps are particularly prone to screwing up the graphics state of R.
 #' Try `graphics.off()` for the error `Invalid graphics state` or similar.
-
-
+#'
 #' Dendrograms can be costly (i.e. lengthy) to compute.
 #' Therefore, it is possible to reuse computed dendrograms when calling the function repeatedly to make minor graphics adjustments.
 #' Bear in mind, no sanity checking is done.  The dendrogram passed with `rerender=` had better be right!
-
+#'
 #' Analysis restricted by significance test p-values:
 
 p <- rowstats (xx2t, test="t-test-unpaired", groups="$$material") $ p.value
 p [is.na(p)] <- p [is.nan(p)] <- FALSE
-# then we would restrict rows as above:
-# image (xx2t [rows = p < 0.05, ], labCol="$$material")
+
+#+ eval=FALSE
+image (xx2t [rows = p < 0.05, ], labCol="$$material")
 
 
 
